@@ -1,0 +1,80 @@
+*{
+    font-family: 'Open Sans',sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+nav{
+    padding: 20px 0 20px 0
+}
+.right, .left{
+    display: inline-block;
+}
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.left{
+    background-color: blue;
+}
+.left > *{
+    float: left;
+}
+.right{
+    float:right;
+    background-color: brown;
+}
+.right > *{
+    float: left;
+}
+ul{
+    list-style: none;
+    float: left;
+}
+li{
+    display: inline-block;
+    border: solid 1px;
+}
+a{
+    text-decoration: none;
+}
+li>a{
+    display: inline-block;
+    padding: 30px 20px;
+}
+a:hover{
+    cursor: pointer ;
+}
+.container{
+    width: 1024px;
+    margin:auto;
+}
+
+.logo{
+    background-color: red;
+    width: 180px;
+    height: 80px;
+    float: left;
+    object-fit: contain;
+    
+}
+
+/* HERO */
+.hero{
+    position: relative;
+    background-image: url(img/jumbotron.png);
+    background-size: contain;
+    height: 500px;
+
+
+}
+
+
+/* .ok{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+} */
