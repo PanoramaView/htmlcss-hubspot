@@ -71,11 +71,9 @@ nav > .container > .left > *{
 }
 ul{
     list-style: none;
-    float: left;
 }
 li{
     display: inline-block;
-    border: solid 1px;
 }
 button{
     border-radius: 5px;
@@ -118,7 +116,6 @@ a:hover{
     cursor: pointer ;
 }
 .logo{
-    height: ;
     float: left;
     object-fit: contain;
     
@@ -195,14 +192,45 @@ a:hover{
     margin-bottom: 20px;
 }
 .CRM-left2{
-    width: 50%;
+    width: 55%;
     margin: 50px 100px 50px 0px;
 }
 .CRM-left2 > *{
     margin-bottom: 30px;
 }
-.learnmore{
+/* .learnmore{
+} */
+  /*Check verde */
+.check{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #FE775A;
+    color: white;
+    padding: 2px 5.8px;
+    border-radius: 50%;
 }
+.CRM-left2 > ul > li,
+.check{
+    margin-right: 20px;
+}
+.linea-retta{
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 350px;
+    border: 1px solid black;
+    margin-left: 60px;
+}
+/* .retta{
+    width: 100px;
+    display: inline-block;
+} */
+
+
+
+
+
+
 
 /* .ok{
     white-space: nowrap;
