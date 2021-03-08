@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* text color & size */
+div{
+    font-size: 15px;
+    color: #32495B;
+}
 /* margini padding */
 .container{
     width: 1100px;
@@ -35,10 +40,10 @@ h2{
     font-weight: 2000;
 }
 h3{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 2000;
 }
-h4{
+h4{ /*solo per POPULAR FEATURE*/
     font-size: 20px;
     font-weight: 2000;
     text-transform: uppercase;
@@ -72,7 +77,8 @@ nav > .container > .left > *{
 ul{
     list-style: none;
 }
-li{
+/* inline-block tranne quelli delle Popular Feature */
+li:not(.card li){
     display: inline-block;
 }
 button{
@@ -198,20 +204,20 @@ a:hover{
 .CRM-left2 > *{
     margin-bottom: 30px;
 }
-/* .learnmore{
-} */
   /*Check verde */
 .check{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     background-color: #FE775A;
     color: white;
-    padding: 2px 5.8px;
+    padding: 0px 3.5px;
     border-radius: 50%;
 }
-.CRM-left2 > ul > li,
+.CRM-left2 > ul > li{
+    margin-right: 25px;
+}
 .check{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .linea-retta{
     display: inline-block;
@@ -226,7 +232,30 @@ a:hover{
     display: inline-block;
 } */
 
-
+/* POPULAR FEATURE */
+.card > img{
+    object-fit: contain;
+    height: 150px;
+}
+.card{
+    margin-bottom: 20px;
+    width: 30%;
+    float:left;
+    text-align: center;
+    padding: 30px;
+}
+.card hr{
+    margin:
+}
+.card > *{
+    margin-bottom: 20px;
+}
+.card li{
+    text-align: left;
+}
+.card:not(:first-child){
+    margin-left: 5%;
+}
 
 
 
