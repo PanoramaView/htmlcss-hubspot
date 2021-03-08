@@ -26,6 +26,8 @@ nav > .container{
 }
 .right > *{
     margin-left: 10px;
+    vertical-align: middle;
+    line-height: 4px;
 }
 .sezione{
     padding: 40px 0;
@@ -80,11 +82,12 @@ ul{
 /* inline-block tranne quelli delle Popular Feature */
 li:not(.card li){
     display: inline-block;
+    line-height: 30px;
 }
 button{
+    font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
-    outline:none;
     outline:none;
 }
 .bt-login{
@@ -98,7 +101,6 @@ button{
     background-color: #FE775A;
     border: none;
     padding: 8px 10px;
-
 }
 .bt-search{
     border:none;
