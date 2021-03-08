@@ -4,10 +4,48 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* HEADER */
-nav{
+/* margini padding */
+.container{
+    width: 1100px;
+    margin:auto;
+}
+nav > .container{
     padding: 20px 0 20px 0
+}
+.left > *:not(:first-child){
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.english{
+    padding-right: 10px;
+}
+.right > *{
+    margin-left: 10px;
+}
+.sezione{
+    padding: 40px 0;
+}
+/* TEXTS */
+h1{
+    font-size: 45px;
+    font-weight: 2000;
+}
+h2{
+    font-size: 35px;
+    font-weight: 2000;
+}
+h3{
+    font-size: 30px;
+    font-weight: 2000;
+}
+h4{
+    font-size: 20px;
+    font-weight: 2000;
+    text-transform: uppercase;
+}
+/* HEADER */
+header nav:first-child{
+    background-color: #F4F9FD;
 }
 .right, .left{
     display: inline-block;
@@ -17,15 +55,16 @@ nav{
     content: '';
     clear: both;
 }
-.left{
-    background-color: blue;
+.english{
+    border-right: 1px solid;
 }
-.left > *{
+.left{
+}
+nav > .container > .left > *{
     float: left;
 }
 .right{
     float:right;
-    background-color: brown;
 }
 .right > *{
     float: left;
@@ -38,40 +77,132 @@ li{
     display: inline-block;
     border: solid 1px;
 }
+button{
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;
+    outline:none;
+}
+.bt-login{
+    color: #FE775A;
+    background-color: transparent;
+    border: 1px solid #FE775A;
+    padding: 8px 10px;
+}
+.bt-orangeS{
+    color: white;
+    background-color: #FE775A;
+    border: none;
+    padding: 8px 10px;
+
+}
+.bt-search{
+    border:none;
+    background-color: transparent;
+    padding: 8px 10px;
+}
+.bt-orange{
+    color: white;
+    background-color: #FE775A;
+    border: none;
+    padding: 15px 35px;
+
+}
 a{
     text-decoration: none;
 }
 li>a{
-    display: inline-block;
     padding: 30px 20px;
 }
 a:hover{
     cursor: pointer ;
 }
-.container{
-    width: 1024px;
-    margin:auto;
-}
-
 .logo{
-    background-color: red;
-    width: 180px;
-    height: 80px;
+    height: ;
     float: left;
     object-fit: contain;
     
 }
 
 /* HERO */
+/* Voglio che l'immagine di background rimanga fissa, dando un effetto che sembri infinita */
 .hero{
     position: relative;
+    height: 695px;
+    background-color: #FFF4EF;
+    z-index: -2;
+}
+/* .hero-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #FFF4EF;
     background-image: url(img/jumbotron.png);
-    background-size: contain;
-    height: 500px;
-
-
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+} */
+.hero-img{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+} 
+.hero-headline{
+    width: 500px;
+    padding-top: 40px;
 }
 
+.hero-headline >*{
+    margin: 10px 0 10px 0;
+}
+
+
+/* CATCHPHRASE SEZIONE 1/2*/
+.blue{
+    background-color: #F4F9FD;
+}
+.catchphrase-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.catchphrase-container> h2{
+    margin-bottom: 40px;
+}
+.catchphrase-container> img{
+    height: 250px;
+}
+
+
+/* CRM SEZIONE 2/3 */
+.rett-bianco{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.198);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.rett-bianco > div{
+    float: left;
+}
+.CRM-left{
+    width: 20%;
+    text-align: center;
+    margin: 50px 80px;
+}
+.rett-bianco > .CRM-left > img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.CRM-left2{
+    width: 50%;
+    margin: 50px 100px 50px 0px;
+}
+.CRM-left2 > *{
+    margin-bottom: 30px;
+}
+.learnmore{
+}
 
 /* .ok{
     white-space: nowrap;
