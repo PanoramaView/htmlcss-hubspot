@@ -90,17 +90,20 @@ button{
     cursor: pointer;
     outline:none;
 }
+button:hover{
+    opacity: 0.7;
+}
 .bt-login{
     color: #FE775A;
     background-color: transparent;
     border: 1px solid #FE775A;
-    padding: 8px 10px;
+    padding: 10px 10px;
 }
 .bt-orangeS{
     color: white;
     background-color: #FE775A;
     border: none;
-    padding: 8px 10px;
+    padding: 10px 10px;
 }
 .bt-search{
     border:none;
@@ -129,13 +132,20 @@ a:hover{
     
 }
 
+/* Tendine */
+.nav-link > li > ul{
+    display: none;
+}
+.nav-link > li > ul:hover{
+    display:block;
+}
 /* HERO */
 /* Voglio che l'immagine di background rimanga fissa, dando un effetto che sembri infinita */
 .hero{
     position: relative;
     height: 695px;
     background-color: #FFF4EF;
-    z-index: -2;
+    z-index: 0;
 }
 /* .hero-img{
     height: 100%;
@@ -341,9 +351,9 @@ padding: 50px 0;
 
 
 /* FOOTER */
-footer{
+footer *{
     background-color: #32495B;
-    color: white;
+    color: rgba(255, 255, 255, 0.733);
 }
 footer li:first-child{
     color: rgb(255, 255, 255);
@@ -352,9 +362,6 @@ footer li:first-child{
 }
 footer li{
     margin: 15px 0;
-}
-footer a{
-    color: rgba(255, 255, 255, 0.733);
 }
 footer ul{
     float:left;
@@ -369,18 +376,56 @@ footer ul{
     padding: 8px 11px;
 }
 /* social networks */
-  
-  .socials{
-  }
-  .socials img{
-    width: 35px;
+.socials img{
+    width: 25px;
     margin: 5px 2px;
   }
   .socials img:hover {
     opacity: 0.7;
   }
  
-  
+.lingue{
+    text-align: center;
+    padding: 50px 0 15px 0;
+}
+.lingue a{
+    margin: 0px 10px;
+}
+.lingue a:hover{
+    opacity: 0.7;
+}
+
+.last-section > .container:last-child{
+    padding: 30px 0;
+}
+.logoinfondo{
+    float: left;
+}
+.logoinfondo div{
+    color: white;
+    padding-top: 5px;
+}
+.legal{
+    float: right;
+}
+.legal a{
+    margin-left: 20px;
+}
+.legal a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .ok{
