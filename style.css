@@ -298,11 +298,31 @@ padding: 50px 0;
     border-right: none;
 }
 
-/* PARTNERS SECTION */
+/* PARTNERS WHITE SECTION*/
 .partners-section{
     
 }
-
+.partners-section > .container > div:first-child {
+    width: 25%;
+    float:left;
+    padding: 50px;
+}
+.partners-section > .container > div > div > span{
+    font-weight: 1000;
+}
+.partners-section h1, .partners-section h2{
+    margin-bottom: 30px;
+}
+.partners-logos{
+    width: 75%;
+    float: right;
+    padding: 60px;
+}
+.partners-logos > img{
+    width: 25%;
+    float:left;
+    padding: 20px;
+}
 
 
 /* .ok{
