@@ -162,6 +162,15 @@ a:hover{
     background-color: #FFF4EF;
     z-index: 0;
 }
+.linea-verdeacqua{
+    background-color: #AFEBE4;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    border-top: 8px solid #33475B;
+    border-bottom: 8px solid #33475B;
+}
 /* .hero-img{
     height: 100%;
     width: 100%;
