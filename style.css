@@ -206,7 +206,7 @@ a:hover{
 .CRM-left2 > *{
     margin-bottom: 30px;
 }
-  /*Check verde */
+  /*Check*/
 .check{
     font-size: 12px;
     font-weight: 500;
@@ -244,13 +244,16 @@ a:hover{
     width: 30%;
     float:left;
     text-align: center;
-    padding: 30px;
+    padding: 35px;
 }
-.card hr{
-    margin:
+.card > *:not(:last-child){
+    margin-bottom: 25px;
 }
-.card > *{
-    margin-bottom: 20px;
+.card > :last-child{
+    margin-top: 20px;
+}
+.card > :nth-child(3){
+    margin-bottom: 50px;
 }
 .card li{
     text-align: left;
@@ -259,7 +262,46 @@ a:hover{
     margin-left: 5%;
 }
 
+/* PERKS */
+.perk-section{
+    background: rgb(0,186,169);
+background: linear-gradient(270deg, rgba(0,186,169,1) 0%, rgba(0,170,184,1) 79%);
+padding: 50px 0;
+}
+.perk-section > .container *{
+    text-align: center;
+    color: white;
+}
+.perk-section > .container > * {
+    margin-bottom: 40px;
+}
+.perk{
+    width: 25%;
+    float:left;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+}
+/* bordi bianchi della tabella delle perks */
+.row1 > .perk{
+    border-top: none;
+}
+.row2 > .perk{
+    border-bottom: none;
+}
+.row1 :first-child,
+.row2 :first-child{
+    border-left: none;
+}
+.row1 :last-child,
+.row2 :last-child{
+    border-right: none;
+}
 
+/* PARTNERS SECTION */
+.partners-section{
+    
+}
 
 
 
