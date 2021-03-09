@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 /* text color & size */
-div{
+div, .right > ul > li > a{
     font-size: 15px;
     color: #32495B;
 }
@@ -28,6 +28,11 @@ nav > .container{
     margin-left: 10px;
     vertical-align: middle;
     line-height: 4px;
+}
+.right img{
+    vertical-align: middle;
+    line-height: 4px;
+    height: 20px;
 }
 .sezione{
     padding: 40px 0;
@@ -79,11 +84,6 @@ nav > .container > .left > *{
 ul{
     list-style: none;
 }
-/* inline-block tranne quelli delle Popular Feature */
-li:not(.card li,.list-footer li){
-    display: inline-block;
-    line-height: 30px;
-}
 button{
     font-size: 15px;
     border-radius: 5px;
@@ -117,10 +117,15 @@ button:hover{
     padding: 15px 35px;
 
 }
+/* inline-block tranne quelli delle Popular Feature */
+li:not(.card li,.list-footer li){
+    display: inline-block;
+    line-height: 30px;
+}
 a{
     text-decoration: none;
 }
-nav li>a{
+nav .small > a{
     padding: 30px 20px;
 }
 a:hover{
@@ -133,11 +138,21 @@ a:hover{
 }
 
 /* Tendine */
-.nav-link > li > ul{
+.nav-link > li > ul > li{
     display: none;
 }
-.nav-link > li > ul:hover{
+.small:hover .thelink{
+    position: absolute;
     display:block;
+    background-color: white;
+    z-index: 1;
+}
+.small:hover:hover + .thelink{
+    max-height: inherit;
+    border: 1px solid black;
+}
+.thelink a{
+    padding: 30px 20px;
 }
 /* HERO */
 /* Voglio che l'immagine di background rimanga fissa, dando un effetto che sembri infinita */
@@ -309,9 +324,6 @@ padding: 50px 0;
 }
 
 /* PARTNERS WHITE SECTION*/
-.partners-section{
-    
-}
 .partners-section > .container > div:first-child {
     width: 25%;
     float:left;
