@@ -366,6 +366,9 @@ padding: 50px 0;
     float:left;
     padding: 20px;
 }
+.partners-logos > img:nth-last-child(2){
+    padding-top: 10px;
+}
 /* SEZIONE CON img/WOMAN */
 .woman-section > .container > div:first-child{
     width: 40%;
