@@ -70,8 +70,6 @@ header nav:first-child{
 .english{
     border-right: 1px solid;
 }
-.left{
-}
 nav > .container > .left > *{
     float: left;
 }
@@ -120,13 +118,18 @@ button:hover{
 /* inline-block tranne quelli delle Popular Feature */
 li:not(.card li,.list-footer li){
     display: inline-block;
-    line-height: 30px;
+    line-height: 20px;
 }
 a{
     text-decoration: none;
 }
-nav .small > a{
-    padding: 30px 20px;
+nav .small{
+    margin: 0px 10px;
+    padding: 5px 5px;
+    border:1px solid transparent;
+}
+nav .small:hover{
+    border:1px solid #ddd;
 }
 a:hover{
     cursor: pointer ;
@@ -137,22 +140,29 @@ a:hover{
     
 }
 
-/* Tendine */
-.nav-link > li > ul > li{
-    display: none;
+/* DROPDOWN */
+.small{
+    position: relative;
 }
-.small:hover .thelink{
-    position: absolute;
+.small:hover .link-list{
     display:block;
-    background-color: white;
     z-index: 1;
 }
-.small:hover:hover + .thelink{
-    max-height: inherit;
-    border: 1px solid black;
+.thelink:hover{background-color: #ddd;}
+.link-list{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 32;
+    left: -1;
+    background-color: white;
+    border: 1px solid #ddd;;
 }
-.thelink a{
-    padding: 30px 20px;
+.thelink{
+    display:block;
+    z-index: 1;
+    padding: 10px 20px;
+    text-align: left;
 }
 /* HERO */
 /* Voglio che l'immagine di background rimanga fissa, dando un effetto che sembri infinita */
